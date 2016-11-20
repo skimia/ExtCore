@@ -69,6 +69,8 @@ namespace ExtCore.WebApplication
         prioritizedConfigureServicesAction(services);
         this.RebuildServiceProvider(services);
       }
+      //in case of no extensions rebuild for application defined services
+      this.RebuildServiceProvider(services);
     }
 
     /// <summary>
